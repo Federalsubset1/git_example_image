@@ -7,7 +7,7 @@ BitmapImage::BitmapImage() : width(640), height(480), channels(3), depth(8) {
 bool BitmapImage::load(std::string name) {
     // check it is a supported image file
     std::string fileExt = name.substr(name.find_last_of(".") + 1);
-    if (fileExt == "jpg") {
+    if (fileExt == "jpg" || fileExt == "png") {
         // load image file
         // decompress into buffer
         // more code to handle pixel depth and channels
@@ -36,3 +36,9 @@ BitmapImage::~BitmapImage() {
 //remember to share the project on github via git-github-share project on github. This is a push action
 
 //blue files means that it is modified from the original (the one that i commit)
+
+//added new branch image_saver
+
+//now we do a checkout
+
+//now we have two splitted developing
