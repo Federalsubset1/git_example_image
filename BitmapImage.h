@@ -13,7 +13,9 @@ public:
 
 private:
     int width, height;
-    char* buffer;
+    int *buffer; //changed from char to save some bits
+    char channels;
+    char depth;
     std::string name;
 };
 
