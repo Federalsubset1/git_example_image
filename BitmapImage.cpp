@@ -31,6 +31,12 @@ bool BitmapImage::save(std::string name) {
     return false;
 }
 
+void BitmapImage::resize(int width, int eight) {
+    this->width = width;
+    this->height = height;
+    //...resize bitmap...
+}
+
 //I have implemented git repository via VCS - add vcs (ore something else)
 //red files means that they are not versioned. To add them we can select the ones we want, and then right click-git
 //-add. Also they become green
@@ -62,3 +68,5 @@ bool BitmapImage::save(std::string name) {
 //add zsh plugin for an easier view in terminal
 
 //commit in git are free
+
+//checkout let switch between branches
